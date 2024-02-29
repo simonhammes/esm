@@ -8,6 +8,8 @@ await esbuild.build({
     loader: {
         '.js': 'jsx',
     },
+    // https://esbuild.github.io/content-types/#auto-import-for-jsx
+    jsx: 'automatic',
     external: ['react', 'react-dom'],
     logLevel: 'info',
 });
