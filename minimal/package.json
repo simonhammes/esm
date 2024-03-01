@@ -2,8 +2,14 @@
   "name": "esm",
   "version": "1.0.0",
   "license": "WTFPL",
+  "scripts": {
+    "start": "esbuild --servedir=."
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
   }
 }
