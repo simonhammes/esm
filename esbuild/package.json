@@ -4,7 +4,7 @@
   "license": "WTFPL",
   "type": "module",
   "scripts": {
-    "build": "node build.js"
+    "start": "node start.js"
   },
   "dependencies": {
     "react": "^18.2.0",

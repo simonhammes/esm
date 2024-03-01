@@ -1,6 +1,6 @@
 import esbuild from 'esbuild';
 
-await esbuild.build({
+let context = await esbuild.context({
     entryPoints: ['src/main.js'],
     outfile: 'dist/main.js',
     format: 'esm',
@@ -13,3 +13,9 @@ await esbuild.build({
     external: ['react', 'react-dom'],
     logLevel: 'info',
 });
+
+await context.watch()
+
+await context.serve({
+  servedir: 'dist',
+})
